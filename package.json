@@ -1,0 +1,39 @@
+{
+  "name": "@yabhq/nuxt-fathom",
+  "version": "0.1.0",
+  "description": "NuxtJS module for Fathom Analytics",
+  "main": "lib/module.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yabhq/nuxt-fathom.git"
+  },
+  "keywords": [
+    "fathom",
+    "fathom",
+    "analytics",
+    "nuxt-fathom",
+    "nuxt",
+    "fathom",
+    "nuxt",
+    "nuxtjs",
+    "vue",
+    "vuejs",
+    "node",
+    "javascript"
+  ],
+  "author": {
+    "name": "Yab",
+    "email": "hello@yabhq.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yabhq/nuxt-fathom/issues"
+  },
+  "homepage": "https://github.com/yabhq/nuxt-fathom#readme"
+}
