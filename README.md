@@ -14,7 +14,7 @@ In your **nuxt.config.js**:
 modules: [
     // ....
     ['@yabhq/nuxt-fathom', { 
-        siteId: 0000000, // required
+        siteId: 'XXXXXX', // required
     }],
     // ....
 ]
