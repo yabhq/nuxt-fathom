@@ -13,8 +13,9 @@ In your **nuxt.config.js**:
 ```JavaScript
 modules: [
     // ....
-    ['@yabhq/nuxt-fathom', { 
+    ['@yabhq/nuxt-fathom', {
         siteId: 'XXXXXX', // required
+        spa: 'pushstate' // optional, default to pushstate. https://usefathom.com/support/tracking
     }],
     // ....
 ]
