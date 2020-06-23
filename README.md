@@ -1,4 +1,3 @@
-
 # Nuxt Fathom
 
 Implement Fathom analytics in your Nuxt app.
@@ -8,7 +7,9 @@ Implement Fathom analytics in your Nuxt app.
 ```
 $ npm i @yabhq/nuxt-fathom
 ```
-In your **nuxt.config.js**:
+
+Configure the module in your **nuxt.config.js**:
+
 ```JavaScript
 modules: [
     // ....
@@ -19,10 +20,10 @@ modules: [
         auto: true, // optional, defaults to `true` (automatically track page views)
         canonical: true, // optional, defaults to `true`
         excludedDomains: 'example.com,localhost', // optional, defaults to ''
-        includedDomains: 'example.com,localhost', // optional, defaults to ''
-        spa: 'auto', // optional, defaults to 'auto'. https://usefathom.com/support/tracking
-        scriptSrc: 'https://bluedonkey.example.com/script.js', // optional, defaults to 'https://cdn.usefathom.com/tracker.js'. https://usefathom.com/support/custom-domains
         honorDoNotTrack: false, // optional, defaults to `false`
+        includedDomains: 'example.com,localhost', // optional, defaults to ''
+        scriptSrc: 'https://bluedonkey.example.com/script.js', // optional, defaults to 'https://cdn.usefathom.com/tracker.js'. See here for details: https://usefathom.com/support/custom-domains
+        spa: 'auto', // optional, defaults to 'auto'
     }],
     // ....
 ]
