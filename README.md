@@ -16,8 +16,9 @@ modules: [
         siteId: 'XXXXXX', // required
 
         // Advanced configuration. See here for details: https://usefathom.com/support/tracking-advanced
-        spa: 'pushstate' // optional, defaults to pushstate. https://usefathom.com/support/tracking
-        scriptSrc: 'https://bluedonkey.example.com/script.js', // optional, defaults to `https://cdn.usefathom.com/tracker.js`. https://usefathom.com/support/custom-domains
+        auto: true, // optional, defaults to `true` (automatically track page views)
+        spa: 'pushstate', // optional, defaults to 'pushstate'. https://usefathom.com/support/tracking
+        scriptSrc: 'https://bluedonkey.example.com/script.js', // optional, defaults to 'https://cdn.usefathom.com/tracker.js'. https://usefathom.com/support/custom-domains
         honorDoNotTrack: false, // optional, defaults to `false`
     }],
     // ....
