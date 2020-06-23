@@ -20,7 +20,7 @@ modules: [
         canonical: true, // optional, defaults to `true`
         excludedDomains: 'example.com,localhost', // optional, defaults to ''
         includedDomains: 'example.com,localhost', // optional, defaults to ''
-        spa: 'pushstate', // optional, defaults to 'pushstate'. https://usefathom.com/support/tracking
+        spa: 'auto', // optional, defaults to 'auto'. https://usefathom.com/support/tracking
         scriptSrc: 'https://bluedonkey.example.com/script.js', // optional, defaults to 'https://cdn.usefathom.com/tracker.js'. https://usefathom.com/support/custom-domains
         honorDoNotTrack: false, // optional, defaults to `false`
     }],
