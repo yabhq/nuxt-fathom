@@ -70,9 +70,6 @@ You can benefit from types inside your `nuxt.config.ts` by adding the module to 
 
 ```json
     "types": [
-      "@nuxt/types",
-      "@types/node",
-      // ...
       "@yabhq/nuxt-fathom"
     ]
 ```
