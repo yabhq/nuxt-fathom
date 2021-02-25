@@ -1,19 +1,23 @@
 # Nuxt Fathom
 
-Implement Fathom analytics in your Nuxt app.
+Implement [Fathom Analytics](https://usefathom.com/) in your Nuxt app.
 
-## Quick Install
+## Installation
 
 ```
-$ npm i @yabhq/nuxt-fathom
+$ npm i -D @yabhq/nuxt-fathom
 ```
 
-Configure the module in your **nuxt.config.js**:
+## Configuration
+
+Configure the module in your `nuxt.config.js`:
 
 ```JavaScript
-modules: [
-    // ....
-    ['@yabhq/nuxt-fathom', {
+export default {
+    buildModules: [
+        '@yabhq/nuxt-fathom'
+    ],
+    fathom: {
         siteId: 'XXXXXX', // required
 
         // Advanced configuration
@@ -40,7 +44,35 @@ modules: [
 
         spa: 'auto',
         // optional, defaults to 'auto'
-    }],
-    // ....
+    },
 ]
+```
+
+### Runtime Config
+
+You can also use the [Runtime Config](https://nuxtjs.org/guide/runtime-config):
+
+```JavaScript
+export default {
+    // ...
+    publicRuntimeConfig: {
+        fathom: {
+            siteId: process.env.FATHOM_SITE_ID,
+        }
+    }
+}
+```
+
+### TypeScript
+
+You can benefit from types inside your `nuxt.config.ts` by adding the module to your
+`tsconfig.json`:
+
+```json
+    "types": [
+      "@nuxt/types",
+      "@types/node",
+      // ...
+      "@yabhq/nuxt-fathom"
+    ]
 ```
